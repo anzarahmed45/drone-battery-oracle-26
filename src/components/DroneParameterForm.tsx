@@ -49,7 +49,7 @@ export function DroneParameterForm({
     onParametersChange(parameters)
   }, [parameters, onParametersChange])
   
-  const handleParameterChange = (key: keyof DroneParameters, value: number | number[]) {
+  const handleParameterChange = (key: keyof DroneParameters, value: number | number[]) => {
     // If the value is an array (from slider), take the first element
     const newValue = Array.isArray(value) ? value[0] : value
     
