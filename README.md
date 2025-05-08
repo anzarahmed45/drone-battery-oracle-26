@@ -1,73 +1,36 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/27065b89-0aa2-4105-8a32-fa05ba59c615
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/27065b89-0aa2-4105-8a32-fa05ba59c615) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/27065b89-0aa2-4105-8a32-fa05ba59c615) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+About This Project
+The Drone Battery Oracle is a predictive model that estimates a drone's battery consumption based on various flight parameters including speed, altitude, wind conditions, payload weight, and more.
+This tool helps pilots optimize their flight plans, ensure sufficient battery capacity for missions, and improve overall flight efficiency.
+How It Works
+Our prediction model uses a combination of physics-based formulas and machine learning techniques to estimate energy consumption based on:
+Drone aerodynamics and propulsion efficiency
+Environmental factors affecting flight performance
+Power requirements for different flight conditions
+Battery discharge characteristics
+The core algorithm calculates power requirements using the formula:
+P = (1/η) × (Phover + Pmovement + Pwind)
+Where η is efficiency factor, Phover is power required for hovering, Pmovement is additional power for movement, and Pwind is power to overcome wind resistance.
+Model Features
+The model considers:
+Flight Speed: Higher speeds require more power
+Altitude: Higher altitudes decrease air density and propeller efficiency
+Wind: Direction and speed affect power requirements
+Payload: Additional weight increases power consumption
+Temperature: Affects battery efficiency and air density
+Output metrics include:
+Battery Consumption: Percentage of battery used
+Flight Time: Estimated duration with given battery
+Maximum Range: Distance possible with current charge
+Efficiency: How effectively battery power is being utilized
+Future Development
+This project is under active development with planned future enhancements:
+Technical Improvements:
+Integration with real flight data
+Support for different drone models
+Machine learning model improvements
+Dynamic route optimization
+User Features:
+Flight path visualization
+Historical data tracking
+Mobile application
+Integration with flight controllers
